@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  touch-action: manipulation;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  touch-action: manipulation;
+  color: white;
+  font-size: 16px;
+}
+
+#sig img {
+  width: 110px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown ul li a:hover {
+  transform: scale(1.1);
+}
+.dropdown ul li a {
+  color: white;
+  padding-left: 20px;
+  text-decoration: none;
+  transition: 0.4s ease;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.dropdown ul li {
+  padding: 10px;
+}
+.dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.dropdown.show {
+  display: block;
+}
+.dropdown {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 1;
+  width: 105%;
+  padding-left: 20px;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.hamburger.active .middle {
+  opacity: 0;
+}
+
+.hamburger.active .bottom {
+  transform: rotate(-45deg) translate(5px, -8px);
+}
+.instagram-link img {
+  transition: transform 0.4s ease;
+  height: 40px;
+  padding-right: 20px;
+}
+
+.instagram-link:hover {
+  transform: scale(1.1);
+}
+.navbar {
+  background-color: black;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30px;
+  width: 30px;
+  padding-left: 20px;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.hamburger.active .top {
+  transform: rotate(45deg) translate(5px, 10px); /* Adjusted values */
+}
+#press {
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
+  margin-top: 20px;
+}
+
+.contact-bar {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: rgb(37, 37, 199);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#friends1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#friends1 img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent extra space below the image */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}

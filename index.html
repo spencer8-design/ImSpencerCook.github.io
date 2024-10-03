@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById("dropdownMenu");
+      dropdown.classList.toggle("show");
+    }
+  </script>
+  <body>
+    <div class="navbar">
+      <div
+        class="hamburger"
+        onclick="toggleDropdown(); this.classList.toggle('active');"
+      >
+        <div class="line top"></div>
+        <div class="line middle"></div>
+        <div class="line bottom"></div>
+      </div>
+      <div id="sig">
+        <img
+          id="sign"
+          src="Screenshot 2024-09-21 at 4.11.43 PM.png"
+          alt="sig"
+        />
+      </div>
+      <a
+        href="https://www.instagram.com/spencer_cook8/"
+        target="_blank"
+        class="instagram-link"
+      >
+        <img src="instalogo.png" alt="Instagram Profile" />
+      </a>
+    </div>
+    <div class="dropdown" id="dropdownMenu">
+      <ul>
+        <li><a href="port.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Friends and Family</a></li>
+      </ul>
+    </div>
+
+    <div id="race">
+      <img src="DSC_0315.JPG" alt="" />
+    </div>
+
+    <div class="contact-bar">
+      <form
+        action="your-server-side-script.php"
+        method="POST"
+        class="contact-form"
+      >
+        <label for="email">GET IN TOUCH</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message"></label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>

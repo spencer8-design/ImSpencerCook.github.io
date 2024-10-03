@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black; /* Set the body background color here */
+  touch-action: manipulation;
+  color: white; /* Default text color */
+  font-size: 16px;
+}
+
+#sig img {
+  width: 110px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown ul li a:hover {
+  transform: scale(1.1);
+}
+
+.dropdown ul li a {
+  color: white;
+  padding-left: 20px;
+  text-decoration: none;
+  transition: 0.4s ease;
+  font-family: "Open Sans", sans-serif;
+  position: sticky;
+}
+
+.dropdown ul li {
+  padding: 10px;
+  position: sticky;
+}
+
+.dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown.show {
+  display: block;
+}
+
+.dropdown {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 1;
+  width: 105%;
+  padding-left: 20px;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.hamburger.active .middle {
+  opacity: 0;
+}
+
+.hamburger.active .bottom {
+  transform: rotate(-45deg) translate(5px, -8px);
+}
+
+.instagram-link img {
+  transition: transform 0.4s ease;
+  height: 40px;
+  padding-right: 20px;
+}
+
+.instagram-link:hover {
+  transform: scale(1.1);
+}
+
+.navbar {
+  background-color: black;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30px;
+  width: 30px;
+  padding-left: 20px;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.hamburger.active .top {
+  transform: rotate(45deg) translate(5px, 10px);
+}
+
+#me {
+  margin: 10px; /* Space between elements */
+  display: flex;
+  justify-content: center;
+  padding-top: 3px;
+}
+
+#press {
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
+  margin-top: 20px;
+}
+
+.contact-bar {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+  margin-top: auto; /* Push to the bottom */
+  width: 100%; /* Full width */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: rgb(37, 37, 199);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+button:hover {
+  background-color: rgb(25, 25, 150); /* Darker shade on hover */
+}
+
+#me {
+  display: flex;
+  justify-content: center;
+  font-family: "Arial", sans-serif;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px; /* Add padding inside the div */
+  margin: 20px; /* Add margin outside the div */
+  border-radius: 8px; /* Rounded corners */
+
+  text-align: center; /* Center the text */
+}
+
+#ace {
+  display: grid; /* Use grid layout */
+  grid-template-columns: 1fr; /* Create a single column */
+  gap: 10px; /* Optional: space between the items */
+  margin: 10px; /* Add margin as needed */
+}
+
+#ace img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#fish {
+  display: block; /* Change to block to allow for margin auto centering */
+  max-width: 600px; /* Set a max width for the div */
+  margin: 20px auto; /* Center the div with auto left/right margins */
+  padding: 10px; /* Add padding inside the div */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1.2em; /* Increase font size for emphasis */
+  text-align: center; /* Center the text */
+  font-style: italic; /* Make the text italic */
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  #ace {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
